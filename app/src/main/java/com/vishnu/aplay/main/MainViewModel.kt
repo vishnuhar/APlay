@@ -26,7 +26,7 @@ class MainViewModel : ViewModel() {
             VideoItem("1", "https://www.classicgaming.cc/classics/dragons-lair/files/videos/stranger-things-season-2-trailer.mp4", "https://cdn.daily-sun.com/public/news_images/2020/05/05/Daily-sun-25.jpg"),
             VideoItem("2", "https://previews.customer.envatousercontent.com/h264-video-previews/1c67bf17-b0b0-444d-be9a-7369313bda2a/599548.mp4?_=2", "https://cdn.daily-sun.com/public/news_images/2020/05/05/Daily-sun-25.jpg"),
             VideoItem("3", "https://www.classicgaming.cc/classics/dragons-lair/files/videos/Dragons-Lair-Intro.mp4", "https://cdn.daily-sun.com/public/news_images/2020/05/05/Daily-sun-25.jpg"),
-            VideoItem("2", "https://previews.customer.envatousercontent.com/h264-video-previews/1c67bf17-b0b0-444d-be9a-7369313bda2a/599548.mp4?_=2", "https://cdn.daily-sun.com/public/news_images/2020/05/05/Daily-sun-25.jpg")
+            VideoItem("4", "https://previews.customer.envatousercontent.com/h264-video-previews/1c67bf17-b0b0-444d-be9a-7369313bda2a/599548.mp4?_=2", "https://cdn.daily-sun.com/public/news_images/2020/05/05/Daily-sun-25.jpg")
         )
 
         youtubeVideoList.value = listOf(
