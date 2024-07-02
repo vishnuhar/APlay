@@ -75,14 +75,14 @@ class VideoListAdapter(private val context: Context, private val videoList: List
     }
 
     private fun playNextVideo() {
-        playbackJob?.cancel() // Cancel any ongoing playback job
+        playbackJob?.cancel()
 
         playbackJob = coroutineScope.launch {
-            delay(1000) // Optional: Add delay if needed between videos
+            delay(1000)
             currentPlayerIndex++
             if (currentPlayerIndex < videoList.size) {
-                notifyItemChanged(currentPlayerIndex - 1) // Update previous video item to show thumbnail
-                notifyItemChanged(currentPlayerIndex) // Update next video item to play video
+                notifyItemChanged(currentPlayerIndex - 1)
+                notifyItemChanged(currentPlayerIndex)
                 val nextVideoItem = videoList[currentPlayerIndex]
                 val exoPlayer = exoPlayers[currentPlayerIndex]
                 val mediaItem = MediaItem.fromUri(nextVideoItem.videoUrl)
